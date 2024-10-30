@@ -5,23 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Order Summary Card</title>
 
-  <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> 
 </head>
-<body>
-    <h1>Order Summary</h1>
-    <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
-      device anywhere you like!</p>
-  
-    <h3>Annual Plan</h3>
-    <p>$59.99/year</p>
-
-    <span class="link">Change</span> <!-- This should now be styled as a link -->
+<body class="background">
+ 
+  <div class="card">
+    <img src="images/illustration-hero.svg" alt="Illustration of woman dancing while listening to music on her phone." class="card-image">
+    <div class="card-content">
+      <h1>Order Summary</h1>
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
     
+      <div class="plan-box">
+        <div class="plan-left">
+          <img src="images/icon-music.svg" alt="Music Icon" class="icon"> 
+          <div class="plan-details">
+            <h3>Annual Plan</h3>
+            <p>$59.99/year</p>
+          </div>
+        </div>
+        <a class="link" href="#">Change</a>
+      </div>
 
-    <p>Proceed to Payment</p>
-    <p>Cancel Order</p>
+      <div class="button-group">
+        <button class="payment" type="button">Proceed to Payment</button>
+        <button class="cancel" type="button">Cancel Order</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
